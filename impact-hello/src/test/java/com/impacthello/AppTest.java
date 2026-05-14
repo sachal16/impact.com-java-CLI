@@ -1,4 +1,4 @@
-package com.impacthello
+package com.impacthello;
 import picocli.CommandLine;
 import picocli.CommandLine.Command;
 
@@ -14,7 +14,7 @@ public class App implements Runnable {
         System.out.println("hi");
     }
     public static void main(String[] args) {
-        int exitCode = new CommandLine(newApp()).execute(args);
+        int exitCode = new CommandLine(new App()).execute(args);
         System.exit(exitCode);
     }
 }
