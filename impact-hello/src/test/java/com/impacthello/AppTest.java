@@ -1,20 +1,11 @@
-package com.impacthello;
+package com.impacthello
+import picocli.CommandLine;
+import picocli.CommandLine.Command;
 
-import static org.junit.Assert.assertTrue;
+@Command(
+    name = "impact-hello",
+    mixinStandardHelpOptions = true,
+    version = "1.0",
+    description = "CLI tool built for impact.com job application"
+)
 
-import org.junit.Test;
-
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
-    }
-}
